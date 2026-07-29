@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CampusMart — Responsive (Buoi 5)</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusMart — Responsive (Buoi 5)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="cm-header">
-  <!-- Nội dung nhìn thấy nằm ở đây -->
-  <h1 data-testid="cm-brand">CampusMart</h1>
+<header class="cm-header">
 
-  <nav aria-label="Menu chinh">
-    <ul class="cm-nav">
-        <li><a href="#home">Trang chu</a> </li>
-        <li><a href="#product">San pham</a></li>
-        <li><a href="#about">Gioi thieu</a></li>
-        <li><a href="#subcribes">Dang ky</a></li>
-    </ul>
-  </nav>
-  </header>
+    <h1 data-testid="cm-brand">CampusMart</h1>
 
-  <main class="cm-main" id="main-content">
-    <section class="cm-hero" id="hero">
-        <h2>Do choi cong nghe cho sinh vien</h2>
-        <a href="#products" class="cm-btn">Xem catalog</a>
-    </section>
-    <section id="categories">
-        <h2>Danh muc</h2>
+    <nav class="cm-nav" aria-label="Menu chinh">
+        <ul>
+            <li><a href="#hero">Trang chu</a></li>
+            <li><a href="#products">San pham</a></li>
+            <li><a href="#about">Gioi thieu</a></li>
+            <li><a href="#subscribe">Dang ky</a></li>
+        </ul>
+    </nav>
 
-            <ul data-testid="cm-category-list">
-                <li>Ban phim</li>
-                <li>Chuot</li>
-                <li>Man hinh</li>
-            </ul>
-    </section>
+</header>
 
-   <section id="products">
-    <h2>San pham</h2>
+<main class="cm-main" id="main-content">
 
-    <div class = "table-wrap">
-        <table data-testid="cm-table">
-        <caption>Danh sach san pham CORE</caption>
+<section class="cm-hero" id="hero">
 
-        <thead>
-            <tr>
-                <th>SKU</th>
-                <th>Anh</th>
-                <th>Ten</th>
-                <th>Danh muc</th>
-                <th>Gia</th>
-                <th>So luong</th>
-            </tr>
-        </thead>
+    <h2>Do choi cong nghe cho sinh vien</h2>
 
-        <tbody>
+    <a href="#products" class="cm-btn">
+        Xem catalog
+    </a>
 
-            <article data-sku="KB-01" class="cm-card">
-               <figure>
-                    <img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&dpr=1.3&pid=InlineBlock&rm=3"
-                        alt="Keychron K2" width="120" height="80">
-                </figure>
-                <h3 class="cm-card-title">Keychron K2</h3>
-                <p class="cm-card-category">Ban phim</p>
-                <p class="cm-card-price">1,890,000 VND</p>
-            </article>
+</section>
 
-            <article data-sku="KB-02" class="cm-card">
-                <figure>
-                    <img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&dpr=1.3&pid=InlineBlock&rm=3"
-                        alt="Akko 3087" width="120" height="80">
-                </figure>
-                <h3 class="cm-card-title">Akko 3087</h3>
-                <p class="cm-card-category">Ban phim</p>
-                <p class="cm-card-price">1,290,000 VND</p>
-            </article>
-               
+<section id="categories">
 
-            <article data-sku="KB-03" class="cm-card">
-                <figure>
-                    <img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&dpr=1.3&pid=InlineBlock&rm=3"
-                        alt="Leopold FC660M" width="120" height="80">
-                </figure>
-                <h3 class="cm-card-title">Leopold FC660M</h3>
-                <p class="cm-card-category">Ban phim</p>
-                <p class="cm-card-price">2,750,000 VND</p>
-            </article>
-               
+<h2>Danh muc</h2>
 
-            <article data-sku="MS-01" class="cm-card">
-                <figure>
-                    <img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&dpr=1.3&pid=InlineBlock&rm=3"
-                        alt="Logitech M331" width="120" height="80">
-                </figure>
-                <h3 class="cm-card-title">Logitech M331</h3>
-                <p class="cm-card-category">Chuot</p>
-                <p class="cm-card-price">290,000 VND</p>
-            </article>
-              
+<ul data-testid="cm-category-list">
+
+<li>Ban phim</li>
+
+<li>Chuot</li>
+
+<li>Man hinh</li>
+
+</ul>
+
+</section>
+
+<section id="products">
+
+<h2>San pham</h2>
+
+<div class="cm-grid" data-testid="cm-product-table">
+
+<article class="cm-card" data-sku="KB-01">
+
+<figure>
+
+<img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&pid=InlineBlock&rm=3"
+alt="Keychron K2">
+
+</figure>
+
+<h3 class="cm-card-title">Keychron K2</h3>
+
+<p class="cm-card-category">Ban phim</p>
+
+<p class="cm-card-price">1 890 000 d</p>
+
+</article>
+
+<article class="cm-card" data-sku="KB-02">
+
+<figure>
+
+<img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&pid=InlineBlock&rm=3"
+alt="Akko 3087">
+
+</figure>
+
+<h3 class="cm-card-title">Akko 3087</h3>
+
+<p class="cm-card-category">Ban phim</p>
+
+<p class="cm-card-price">1 290 000 d</p>
+
+</article>
+
+<article class="cm-card" data-sku="KB-03">
+
+<figure>
+
+<img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&pid=InlineBlock&rm=3"
+alt="Leopold FC660M">
+
+</figure>
+
+<h3 class="cm-card-title">Leopold FC660M</h3>
+
+<p class="cm-card-category">Ban phim</p>
+
+<p class="cm-card-price">2 750 000 d</p>
+
+</article>
+
+<article class="cm-card" data-sku="MS-01">
+
+<figure>
+
+<img src="https://th.bing.com/th/id/OIP.iMQhAGM9C0XIuItQAa6MnwHaE8?w=89&h=90&c=1&rs=1&qlt=70&r=0&o=7&pid=InlineBlock&rm=3"
+alt="Logitech M331">
+
+</figure>
+
+<h3 class="cm-card-title">Logitech M331</h3>
+
+<p class="cm-card-category">Chuot</p>
+
+<p class="cm-card-price">290 000 d</p>
+
+</article>
 
             <article data-sku="MS-02" class="cm-card">
                 <figure>
@@ -140,16 +166,13 @@
                 <p class="cm-card-category">Man hinh</p>
                 <p class="cm-card-price">8,500,000 VND</p>
             </article>
+</div>
 
-        </tbody>
-    </table>
-    </div>
-    <p data-testid="cm-inventory-total">
-        Tong gia tri kho = 41380000
-    </p>
+<p data-testid="cm-inventory-total">
+    Tong gia tri kho = 41380000
+</p>
 
-    <p>So san pham = 8</p>
-
+<p>So san pham = 8</p>
 </section>
 
     <section id="about">
@@ -178,7 +201,7 @@
         </form>
     </section>
 
-    <section id="subcribe">
+    <section id="subscribe">
         <h2>Dang ky tin nhan</h2>
         <form data-testid="cm-subscribe-form" action="#" method="get">
   <fieldset>
@@ -212,7 +235,7 @@
     </section>
 </main>
 
-<footer id="home">
+<footer >
     <p>&copy; 2026 CampusMart</p>
 </footer>
 <!-- CM_EXPECT product_count=8 card_count=8 inventory_value=41380000 responsive=640,1024 -->
